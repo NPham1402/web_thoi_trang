@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/style2.css">
+            <link rel="stylesheet" href="css/style.css">
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <script src="js/fn.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+            defer
+          ></script>
+            <script src="js/google-map.js"></script>
+            <style>
+                .carousel-inner img {
+                        width: 100%;
+                        height: 100%;
+                    }
+            </style>
+        </head>
+  <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-logo" href="trangchu3.html"><img src="img/1200px-Sport_records_icon_NP.svg.png" style="width:50px;height:40px;"></a> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="trangchu3.html">Trang Chủ  <i class="fas fa-home" style="font-size: 20px;"></i><span class="sr-only">(current)</span></a>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Áo
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="aothun.html"style="color:darkorange;">Áo Thun</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="aosomi.html" style="color:darkorange;">Áo Sơ Mi</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Quần
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                          <a class="dropdown-item" href="quanjean.html" style="color:darkorange;">Quần Jean</a>
+                          <div class="dropdown-divider" ></div>
+                          <a class="dropdown-item" href="quankaki.html" style="color:darkorange;">Quần Kaki</a>
+                          <div class="dropdown-divider" ></div>
+                          <a class="dropdown-item" href="quanshort.html" style="color:darkorange;">Quần Short</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartshopping.html">Giỏ Hàng <i class="fas fa-shopping-cart" style="font-size: 20px;"></i></a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="thongtincanhan.html">Đỗ Phạm Nguyên <i class="fas fa-user" style="font-size: 20px;"></i></a>
+                      </li>
+                  </ul>
+                </div>
+         </nav>
+
+        <div class="carpusel">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+            <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Untitled-1.png" alt="Los Angeles" width="1000" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/1.png" alt="Chicago" width="1000" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/quangcao2.jpg" alt="New York" width="1000" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/2.png" alt="New York" width="100" height="500">
+                  </div>
+                </div>
+    
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+         </div>
+<script>
+function   tinhtien1()
+{
+  var a=document.getElementById("number1").value;
+  var b=document.getElementById("gia2").value 
+  var c=document.getElementById("gia3").value;;
+  console.log(a);
+  console.log(b);
+  console.log(c);
+  var a2=document.getElementById("gia1").value;
+  console.log(a2);
+  document.getElementById("gia1").value=a*a2;
+  document.getElementById("gia4").value=Number(a2)+Number(b)+Number(c);
+  
+ 
+}
+function   tinhtien2()
+{
+  var b=document.getElementById("gia1").value;
+  var a=document.getElementById("number2").value 
+  var c=document.getElementById("gia3").value;;
+  console.log(a);
+  var a2=document.getElementById("gia2").value;
+  console.log(a2);
+  document.getElementById("gia2").value=a*a2;
+  document.getElementById("gia4").value=a+b+c;
+  document.getElementById("gia4").value=Number(a2)+Number(b)+Number(c);
+  
+}
+function   tinhtien3()
+{
+  var b=document.getElementById("gia1").value;
+  var c=document.getElementById("gia2").value 
+  var a=document.getElementById("number3").value;;
+  console.log(a);
+  var a2=document.getElementById("gia3").value;
+  console.log(a2);
+  document.getElementById("gia3").value=a*a2;
+  document.getElementById("gia4").value=a+b+c;
+  document.getElementById("gia4").value=Number(a2)+Number(b)+Number(c);
+  
+}
+function alertshow()
+ {
+  console.log(1);
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Đã đặt hàng thành công!!!',
+    showConfirmButton: false,
+    timer: 2000
+  });
+ }
+</script>
+        </div><br><Br>
+        <div class="row">
+            <DIV class="col-sm"><hr style="height: 10px;"></DIV>
+            <div class="col-sm" > <h1 style="text-align:center; color:cyan;">GIỎ HÀNG</h1><br></div>
+            <div class="col-sm"><hr width="100%"></div> 
+        </div>
+        <div class="cart-shopping">
+            <div class="cart-header" style=" border-bottom: 3px solid gray;" >
+                <h2 class="cart-header-iteam1" style="float:left; font-size:1.65vw">Sản Phẩm</h2>
+                <h2 class="cart-header-iteam2" style="float:left; font-size:1.65vw">Số Lượng</h2>
+                <h2 class="cart-header-iteam2" style="float:left; font-size:1.65vw">Size</h2>
+                <h2 class="cart-header-iteam3" style="float:clear; font-size:1.65vw">Giá</h2>
+            </div>
+            <DIV class="cart-body">
+            <div class="cart-product">
+              <div class="icon-remove">  <i class="fas fa-minus-circle" style=" padding:5px;font-size: 30px;color:darkorange;"></i>
+                </div>
+                <img src="img/aosomi/ao-so-mi-hoa-tiet_450.000đ.jpg" style="float:left;">
+                <div class="title">
+                    <a href="#" style="font-size:1.5vw"> Áo sơ mi họa tiết</a>
+                </div>
+            </div>
+            <div class="cart-number" id ="sl1">
+              <input id="number1" type="number" value="1"min="1" max="10" onchange="tinhtien1()" >
+            </div>
+            <div class="cart-size">
+                <select>
+                    <option>Chưa Chọn size</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+            </div>
+            <div class="cart-total">
+              <input type="text" id="gia1" value="450000" readonly style="border:none;width: 59px; color:blue;float: left;">
+              <p style="float: left;padding-top: 2.8px;color:blue">VNĐ</p>
+            </div>
+              <div class="cart-product">
+                <div class="icon-remove">  <i class="fas fa-minus-circle" style=" padding:5px;font-size: 30px;color:darkorange;"></i>
+                  </div>
+                  <img src="img/aothun/ao-thun-tommy_450.000đ.jpg" style="float:left;">
+                  <div class="title">
+                      <a href="#" style="font-size:1.5vw"> Áo thun tomy</a>
+                  </div>
+              </div>
+              <div class="cart-number" id ="sl2">
+                <input id="number2" type="number" value="1"min="1" max="10"onchange="tinhtien2()" >
+              </div>
+              <div class="cart-size">
+                  <select>
+                      <option>Chưa Chọn size</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                  </select>
+              </div>
+              <div class="cart-total">
+                <input type="text" id="gia2" value="320000" readonly style="border:none;width:59px;color:blue;float: left;">
+                <p style="float: left;padding-top: 2.8px;color:blue">VNĐ</p>
+              </div>
+              <div class="cart-product"style="border-bottom: 3px solid gray;">
+                <div class="icon-remove">  <i class="fas fa-minus-circle" style=" padding:5px;font-size: 30px;color:darkorange;"></i>
+                  </div>
+                  <img src="img/quần jean rách skinny_450.000đ.jpg" style="float:left;">
+                  <div class="title">
+                      <a href="#" style="font-size:1.5vw"> Quần jean rách skinny</a>
+                  </div>
+              </div>
+              <div class="cart-number"style="border-bottom: 3px solid gray;">
+                <input id="number3" type="number" value="1"min="1" max="10" onchange="tinhtien3()">
+              </div>
+              <div class="cart-size"style="border-bottom: 3px solid gray;">
+                  <select>
+                      <option>Chưa Chọn size</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                  </select>
+              </div>
+              <div class="cart-total2" style="border-bottom: 3px solid gray;">
+                <input type="text" id="gia3" value="120000" readonly style="border:none;width: 59px;color:blue;float: left;">
+                <p style="float: left;padding-top: 2.8px; color:blue;">VNĐ</p>
+              </div>
+            </DIV>
+          </div>
+        </div>
+        <br>
+        <h1 style="float:none;padding-left:15%;">Tổng Tiền: <input type="text" id="gia4" readonly style="border:none;color:blue;float: right;width: 36%;"></h1>
+        <button id="count"class="muahang" onclick="alertshow()" style="margin-left: 72%;">thanh Toán</button>
+       
+<br>
+<br><br><br><br>
+          <div class="footer" >
+            <div class="footer_1">
+              <h4 style="color: darkorange;">Công ty</h4><br>
+                <ul>
+                  <li style="font-size: 20px;">Giới thiệu về NP</li><br>
+                  <li style="font-size: 20px;">Tuyển dụng</li><br>
+                  <li style="font-size: 20px;">Hệ thống cửa hàng</li><br>
+                  <li style="font-size: 20px;">Chăm sóc khách hàng</li><br>
+                </ul>  
+            </div>
+            <div class="footer_2">
+              <h4 style="color: darkorange;">Chính Sách Khách Hàng</h4><br>
+                <ul>
+                  <li style="font-size: 20px;">Chính sách khách hàng thân thiết</li><br>
+                  <li style="font-size: 20px;">Chính sách đổi trả</li><br>
+                  <li style="font-size: 20px;">Chính sách bảo hành</li><br>
+                  <li style="font-size: 20px;">Câu hỏi thường gặp</li><br>
+                </ul> 
+            </div>
+            <div class="footer_3">
+               <h4 style="color: darkorange;">Địa Chỉ</h4>
+              <ul>
+                <li style="font-size: 20px;">828 Sư Vạn Hạnh, Phường 13, Quận 10, Thành phố Hồ Chí Minh.</li>
+              </ul>
+              <div id="map" class="map" style="height: 280px;width:95%; "></div>
+            </div>
+          </div>
+        
+    </body>
+    </html>

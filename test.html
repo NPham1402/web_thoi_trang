@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <style>
+        .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+    </style>
+</head>
+<style>
+.card-ct {
+  position: relative;
+  width: 50%;
+}
+
+.card-img-top {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.card-mid_bottom {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-ct:hover .card-img {
+  opacity: 0.1;
+}
+
+.card-ct:hover .card-mid_bottom {
+  opacity: 1;
+}
+
+.card-text_in {
+  background-color:green;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Opacity with Box</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="row">
+    <div class="column">
+        <div class="cart-ct">
+            
+            <img class="card-img-top" src="img/áo sơ mi nam tay ngắn_350.000đ.jpg" alt="Card image"height="478">
+            <div class="card-mid_bottom">
+                <div class="card-text_in">John Doe</div>
+              </div>
+        </div>
+            <div class="card-body">
+                <h4 class="card-title" href="#">Áo sơ mi nam tay ngắn </h4>
+               <p class="card-text" style="color:red;font-size: 18px;">350.000<u>Đ</u></p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img class="card-img-top" src="img/áo sơ mi tay ngắn kẻ sọc_350.000đ.jpg" alt="Card image"height="478">
+        <div class="card-body">
+            <h4 class="card-title" href="#">Áo sơ mi tay ngắn kẻ sọc </h4>
+           <p class="card-text" style="color:red;font-size: 18px;">350.000<u>Đ</u></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img class="card-img-top" src="img/áo sơ mi Modal Flannel_350.000đ.jpg" alt="Card image"height="478">
+        <div class="card-body">
+            <h4 class="card-title" href="#">Áo sơ mi Modal Flannel </h4>
+           <p class="card-text" style="color:red;font-size: 18px;">350.000<u>Đ</u></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img class="card-img-top" src="img/áo sơ mi tay dài kẻ sọc_350.000đ.jpg" alt="Card image"height="478">
+        <div class="card-body">
+            <h4 class="card-title" href="#">Áo sơ mi tay dài kẻ sọc </h4>
+           <p class="card-text" style="color:red;font-size: 18px;">350.000<u>Đ</u></p>
+        </div>
+      </div>
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+          <link rel="stylesheet" href="css/style2.css">
+            <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+            <link rel = "icon" href ="img/1200px-Sport_records_icon_NP.svg.png"type = "image/x-icon"> 
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+            <script type="text/javascript"  src="js/fn.js" charset="utf-8"></script>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+            defer
+          ></script>
+            <script src="js/google-map.js"></script>
+            <style>
+                .carousel-inner img {
+                        width: 100%;
+                        height: 100%;
+                    }
+            </style>
+        </head>
+  <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-logo" href="trangchu3.html"><img src="img/1200px-Sport_records_icon_NP.svg.png" style="width:50px;height:40px;"></a> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="trangchu3.html">Trang Chủ  <i class="fas fa-home" style="font-size: 20px;"></i><span class="sr-only">(current)</span></a>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Áo
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="aothun.html"style="color:darkorange;">Áo Thun</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="aosomi.html" style="color:darkorange;">Áo Sơ Mi</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Quần
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                          <a class="dropdown-item" href="quanjean.html" style="color:darkorange;">Quần Jean</a>
+                          <div class="dropdown-divider" ></div>
+                          <a class="dropdown-item" href="quankaki.html" style="color:darkorange;">Quần Kaki</a>
+                          <div class="dropdown-divider" ></div>
+                          <a class="dropdown-item" href="quanshort.html" style="color:darkorange;">Quần Short</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cartshopping.html">Giỏ Hàng <i class="fas fa-shopping-cart" style="font-size: 20px;"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="dangnhap.html">Đăng Nhập <i class="fas fa-user" style="font-size: 20px;"></i></a>
+                      </li>
+                  </ul>
+                </div>
+         </nav>
+
+        <div class="carpusel">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+            <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Untitled-1.png" alt="Los Angeles" width="1000" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/1.png" alt="Chicago" width="1000" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/quangcao2.jpg" alt="New York" width="1000" height="500">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/2.png" alt="New York" width="100" height="500">
+                  </div>
+                </div>
+    
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+         </div>
+<br>
+        <div class="row">
+          <DIV class="col-sm"><hr style="height: 10px;"></DIV>
+          <div class="col-sm" > <h1 style="text-align:center; color:cyan;">QUẦN KAKI</h1><br></div>
+          <div class="col-sm"><hr width="100%"></div> 
+      </div>
+      <div class="sections">
+        <label for="sort"><h5>Sắp xếp:</h5></label> 
+        <select id="sort">
+          <option value="word">A-Z</option>
+          <option value="unword">Z-A</option>
+          <option value="salemin">Giá từ thấp => cao</option>
+          <option value="salemax">Giá từ cao => thấp</option>
+        </select>
+      </div>
+      <br>
+      <div class="row">
+          <div class="column"> <a href="quan-kaki-cotton-carrot.html" class="hv_card" style="text-decoration: none;">
+              <div class="card">
+                  <img class="card-img-top" src="img/quankaki/quần kaki cotton carrot_450.000đ.jpg" alt="Card image"height="478">
+                  <div class="card-body">
+                      <h4 class="card-title" href="#">Quần kaki cotton carrot </h4>
+                      <div  >
+                        <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                        <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                        <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                      </div>
+                     <p class="card-text" style="color:red;font-size: 18px;">450.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-form-carrot.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quần kaki form carrot_450.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần kaki form carrot </h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">450.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-form-jogger.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quần kaki form jogger_445.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần kaki form jogger</h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">445.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-slim-crop.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quần kaki slim crop_480.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần kaki slim crop</h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">480.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
+<br><br>
+      <div class="row">
+          <div class="column">  <a href="quan-kaki-slim-crop-2.html" class="hv_card" style="text-decoration: none;">
+              <div class="card">
+                  <img class="card-img-top" src="img/quankaki/quần kaki slim crop 2_450.000đ.jpg" alt="Card image"height="478">
+                  <div class="card-body">
+                      <h4 class="card-title" href="#">Quần kaki slim crop 2 </h4>
+                      <div  >
+                        <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                        <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                        <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                      </div>
+                     <p class="card-text" style="color:red;font-size: 18px;">450.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+                </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-straight-crop.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quần kaki straight crop_440.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần kaki straight crop </h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">440.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-giordano.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quan kaki giordano_450.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần kaki giordano</h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">450.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-giordano-2.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quan kaki giordano 2_450.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần kaki giordano 2</h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">450.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+<br><br>
+        <div class="row">
+          <div class="column">  <a href="quan-kaki-nam-vang.html" class="hv_card" style="text-decoration: none;">
+              <div class="card">
+                  <img class="card-img-top" src="img/quankaki/quan kaki nam vang_450.000đ.jpg" alt="Card image"height="478">
+                  <div class="card-body">
+                      <h4 class="card-title" href="#">Quần kaki nam vàng </h4>
+                      <div  >
+                        <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                        <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                        <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                      </div>
+                     <p class="card-text" style="color:red;font-size: 18px;">450.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+                  </div>
+              </div>
+              </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-ong-dung.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quan kaki ong dung_450.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần kaki ống đứng </h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">450.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-tron-slim-fit.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quần kaki trơn slim fit_420.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần kaki trơn slim fit</h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">420.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="column">  <a href="quan-kaki-vai-linen-ke-soc.html" class="hv_card" style="text-decoration: none;">
+            <div class="card">
+              <img class="card-img-top" src="img/quankaki/quần vải linen kẻ sọc_420.000đ.jpg" alt="Card image"height="478">
+              <div class="card-body">
+                  <h4 class="card-title" href="#">Quần vải linen kẻ sọc</h4>
+                  <div  >
+                    <button class="btn success"><a style="font-size: 18px;">M</a></button>
+                    <button class="btn info"><a style="font-size: 18px;">L</a></button>
+                    <button class="btn warning"><a style="font-size: 18px;">XL</a></button>
+                  </div>
+                 <p class="card-text" style="color:red;font-size: 18px;">450.000 <u>VNĐ</u></p>  <button class="card-cart" onclick=" card_notice()" style="font-size: 25px;width: 100%; border-radius: 10px;">Thêm vào giỏ hàng</button>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+        <br><br>
+        <div class="listnumber">
+            <ul>
+                <li><a href="quankaki2.html"><i class="fas fa-backward"></i></a></li>
+                <li ><a href="quankaki.html">1</a></li>
+                <li><a href="quankaki2.html">2</a></li>
+                <li style="background-color: rgba(0, 0, 0, 0.37);"><a href="quankaki3.html">3</a></li>
+                <li><a href="quankaki4.html">4</a></li>
+                <li><a href="quankaki4.html"><i class="fas fa-forward"></i></a></li>
+            </ul>
+        </div>
+        <br><br>
+            <div class="footer">
+              <div class="footer_1">
+                <h4 style="color: darkorange;">Công ty</h4><br>
+                  <ul>
+                    <li style="font-size: 20px;">Giới thiệu về NP</li><br>
+                    <li style="font-size: 20px;">Tuyển dụng</li><br>
+                    <li style="font-size: 20px;">Hệ thống cửa hàng</li><br>
+                    <li style="font-size: 20px;">Chăm sóc khách hàng</li><br>
+                  </ul>  
+              </div>
+              <div class="footer_2">
+                <h4 style="color: darkorange;">Chính Sách Khách Hàng</h4><br>
+                  <ul>
+                    <li style="font-size: 20px;">Chính sách khách hàng thân thiết</li><br>
+                    <li style="font-size: 20px;">Chính sách đổi trả</li><br>
+                    <li style="font-size: 20px;">Chính sách bảo hành</li><br>
+                    <li style="font-size: 20px;">Câu hỏi thường gặp</li><br>
+                  </ul> 
+              </div>
+              <div class="footer_3">
+               
+                 <h4 style="color: darkorange;">Địa Chỉ</h4>
+                <ul>
+                  <li style="font-size: 20px;">828 Sư Vạn Hạnh, Phường 13, Quận 10, Thành phố Hồ Chí Minh.</li>
+                </ul>
+                <div id="map" class="map" style="height: 280px;width:95%; "></div>
+              </div>
+            </div>
+        
+    </body>
+    </html>

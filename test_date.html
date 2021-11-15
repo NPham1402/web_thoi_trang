@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <select id="date">
+        </select>
+        <select id="month" onchange="have_date()">
+            <option value="1">jan</option>
+        </select>
+        <select id="year" onchange="have_date()">
+            <option value="2020">2020</option>
+        </select>
+        <script>
+            function have_date()
+            {
+                var getMonth_have=document.getElementById("month").value;
+                var getYear_have=document.getElementById("year").value;
+                
+            }
+        </script>
+    </body>
+</html>

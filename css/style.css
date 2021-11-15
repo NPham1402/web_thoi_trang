@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: auto;
+}
+.left{
+    position: fixed;
+    display: inline-block;
+    left:0;
+    width: 25%;
+    height: 100%;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.left .left-header{
+    overflow: hidden;
+    background-color: gray;
+    width:100%;
+    height: 10%;
+    text-align: center;
+}
+.left-header logo  {
+  
+    top: 50%;
+    left: 50%;
+    margin-left:-50%;
+    margin-top: -50%;
+
+} 
+.card_sp{
+    text-decoration: none;
+}
+.left ul{
+    padding:0;
+    margin: 0;
+}
+.left ul li{
+    list-style: none;
+    resize: both;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    text-transform: uppercase;
+}
+.left ul li a{
+    display: block;
+    line-height: 90px;
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    transition: 0.8s;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    width :100%;
+    padding-left: 30px;
+    border-left: 3px solid transparent;
+}
+.left ul li a.active,
+.left ul li a:hover{
+    color: cyan; 
+    padding-left: 50px;  
+    background: #1e1e1e;
+    border-left-color: cyan;
+}
+.right{
+  
+    float: right;
+    width:75%;
+    height :200px;
+}
+
+.left ul ul{
+    position: static;
+    display:none;
+}
+.left ul.listchild-show.show{
+    display: block;
+    transition: 0.4s;
+}
+.left ul.listchild1-show.show1{
+    display: block;
+    transition: 0.4s;
+}
+.left ul ul li{
+    line-height: 60px;
+    border-bottom: none;
+}
+.left ul ul li a{
+    font-size: 16px;
+    columns: #e6e6e6;
+    padding-left: 80px;
+}
+.left ul li a span{
+    top:50%;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: 0.4s;
+}
+.left ul li a span.rotate{
+transform: translateY(-50%) rotate(-180deg);
+}
+.card{
+    
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
